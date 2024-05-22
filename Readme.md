@@ -85,3 +85,28 @@ WHERE title  LIKE "WALL%";
 ```
 
 </details>
+
+
+<details>
+
+<summary>SQL Lesson 4: Filtering and sorting Query results</summary>
+
+List all directors of Pixar movies (alphabetically), without duplicates
+
+```
+SELECT DISTINCT Director FROM movies ORDER BY Director ASC ;
+```
+List the last four Pixar movies released (ordered from most recent to least)
+```
+SELECT * FROM movies WHERE year ORDER BY year DESC LIMIT 4;
+```
+List the first five Pixar movies sorted alphabetically
+```
+SELECT * FROM movies  ORDER BY Title asc LIMIT 5
+```
+
+List the next five Pixar movies sorted alphabetically
+```
+SELECT * FROM movies  ORDER BY Title asc LIMIT 5 OFFSET 5
+```
+</details>
