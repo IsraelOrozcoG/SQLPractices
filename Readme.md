@@ -64,8 +64,8 @@ SELECT * FROM Movies ORDER BY YEAR ASC LIMIT 0, 6;
 
 <summary>SQL Lesson 3: Queries with constraints (Pt. 2)</summary>
 Find all the Toy Story movies 
-```
 
+```
 SELECT Title FROM movies WHERE Title like "Toy Story%"
 ```
 Find all the movies directed by John Lasseter
