@@ -60,3 +60,28 @@ Find the first 5 Pixar movies and their release year
 SELECT * FROM Movies ORDER BY YEAR ASC LIMIT 0, 6;
 ```
 </details>
+<details>
+
+<summary>SQL Lesson 3: Queries with constraints (Pt. 2)</summary>
+Find all the Toy Story movies 
+```
+
+SELECT Title FROM movies WHERE Title like "Toy Story%"
+```
+Find all the movies directed by John Lasseter
+```
+SELECT title, director FROM movies 
+WHERE director = "John Lasseter";
+```
+Find all the movies (and director) not directed by John Lasseter
+```
+SELECT title, director FROM movies 
+WHERE NOT director = "John Lasseter";
+```
+Find all the WALL-* movies
+```
+SELECT * FROM movies 
+WHERE title  LIKE "WALL%";
+```
+
+</details>
