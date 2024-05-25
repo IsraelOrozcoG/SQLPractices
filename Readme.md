@@ -140,3 +140,33 @@ List the third and fourth largest cities (by population) in the United States an
 SELECT * FROM north_american_cities WHERE Country ="United States" ORDER BY population DESC LIMIT 2 OFFSET 2 ;
 ```
 </details>
+
+
+<details>
+
+<summary>SQL Lesson 6: Multi-table queries with JOINs</summary>
+
+Find the domestic and international sales for each movie
+```
+SELECT Domestic_sales, International_sales,Title
+FROM  Boxoffice
+JOIN Movies 
+    ON id = Movie_id
+```
+Show the sales numbers for each movie that did better internationally rather than domestically
+```
+SELECT Domestic_sales, International_sales,Title
+FROM  Boxoffice
+JOIN Movies 
+    ON id = Movie_id
+WHERE International_sales>Domestic_sales
+```
+List all the movies by their ratings in descending order
+```
+SELECT Domestic_sales, International_sales,Title
+FROM  Boxoffice
+JOIN Movies 
+    ON id = Movie_id
+ORDER BY Rating DESC
+```
+</details>
