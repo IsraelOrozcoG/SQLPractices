@@ -170,3 +170,14 @@ JOIN Movies
 ORDER BY Rating DESC
 ```
 </details>
+
+<details>
+
+<summary>SQL Lesson 7: OUTER JOINs</summary>
+
+Find the list of all buildings that have employees
+Find the list of all buildings and their capacity
+List all buildings and the distinct employee roles in each building (including empty buildings)
+
+
+</details>
