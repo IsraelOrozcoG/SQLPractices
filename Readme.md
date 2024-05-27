@@ -176,8 +176,18 @@ ORDER BY Rating DESC
 <summary>SQL Lesson 7: OUTER JOINs</summary>
 
 Find the list of all buildings that have employees
+```
+SELECT DISTINCT Building FROM Employees;
+```
 Find the list of all buildings and their capacity
+```
+SELECT * FROM Buildings;
+```
 List all buildings and the distinct employee roles in each building (including empty buildings)
-
-
+```
+SELECT DISTINCT building_name, role 
+FROM Buildings 
+  LEFT JOIN Employees
+    ON Building_name = Building;
+```
 </details>
