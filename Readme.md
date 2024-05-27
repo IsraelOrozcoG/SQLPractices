@@ -212,3 +212,15 @@ FROM Buildings
 WHERE Role IS NULL;
 ```
 </details>
+
+<details>
+
+<summary>SQL Lesson 9: Queries with expressions</summary>
+
+List all movies and their combined sales in millions of dollars
+
+List all movies and their ratings in percent
+
+List all movies that were released on even number years
+
+</details>
