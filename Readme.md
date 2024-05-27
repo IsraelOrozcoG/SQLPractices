@@ -191,3 +191,24 @@ FROM Buildings
     ON Building_name = Building;
 ```
 </details>
+
+<details>
+
+<summary>SQL Lesson 8: A short note on NULLs</summary>
+
+Find the name and role of all employees who have not been assigned to a building
+```
+
+SELECT *
+FROM Employees
+WHERE Building IS NULL
+```
+Find the names of the buildings that hold no employees
+```
+SELECT DISTINCT Building_name
+FROM Buildings 
+  LEFT JOIN Employees
+    ON Building_name = Building
+WHERE Role IS NULL;
+```
+</details>
