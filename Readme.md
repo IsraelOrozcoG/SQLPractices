@@ -224,3 +224,23 @@ List all movies and their ratings in percent
 List all movies that were released on even number years
 
 </details>
+
+<details>
+<summary>SQL Lesson 10: Queries with aggregates (Pt. 1)</summary>
+
+Find the longest time that an employee has been at the studio
+```
+SELECT MAX(Years_employed) as Longest_Time FROM employees;
+```
+For each role, find the average number of years employed by employees in that role
+```
+SELECT AVG(Years_employed) as Average_years_employed,Role FROM employees
+GROUP BY Role;
+```
+Find the total number of employee years worked in each building
+```
+SELECT Building, SUM(Years_employed) as Total_years_employed
+FROM employees
+GROUP BY Building;
+```
+</details>
