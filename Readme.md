@@ -248,25 +248,47 @@ GROUP BY Building;
 <details>
 <summary>SQL Lesson 11: Queries with aggregates (Pt. 2)</summary>
 Find the number of Artists in the studio (without a HAVING clause)
-```
 
+```
 SELECT Role, COUNT(*) as Artists
 FROM Employees
 WHERE role = "Artist";
 ```
 Find the number of Employees of each role in the studio
 ```
-
 SELECT Role, COUNT(*)
 FROM Employees
 GROUP BY Role;
 ```
 Find the total number of years employed by all Engineers
-```
 
+```
 SELECT Role, SUM(years_employed)
 FROM Employees
 GROUP BY Role
 HAVING Role = "Engineer";
+```
+
+</details>
+
+<details>
+<summary>SQL Lesson 12: Order of execution of a Query</summary>
+
+Find the number of movies each director has directed
+
+```
+SELECT Director, COUNT(id) as Quantity_directed_movies
+FROM Movies
+GROUP BY Director;
+```
+
+Find the total domestic and international sales that can be attributed to each director
+
+```
+SELECT Director, SUM(Domestic_sales + International_sales) as Domestic_and_International_Sales
+FROM Movies
+    INNER JOIN boxoffice
+        ON Movies.id = Boxoffice.movie_id
+GROUP BY director;
 ```
 </details>
