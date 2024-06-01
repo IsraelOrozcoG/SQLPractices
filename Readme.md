@@ -292,3 +292,20 @@ FROM Movies
 GROUP BY director;
 ```
 </details>
+
+<details>
+<summary>SQL Lesson 13: Inserting rows</summary>
+
+Add the studio's new production, Toy Story 4 to the list of movies (you can use any director)
+
+```
+INSERT INTO movies VALUES (15, "Toy Story 4", "John Lasseter", 2015, 90);
+```
+Toy Story 4 has been released to critical acclaim! It had a rating of 8.7, and made 340 million domestically and 270 million internationally. Add the record to the BoxOffice table.
+
+```
+INSERT INTO BoxOffice
+(movie_id, rating, Domestic_sales, International_sales)
+VALUES (15, 8.7, 340 000000,270 000000);
+```
+</details>
