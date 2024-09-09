@@ -1,6 +1,6 @@
 # Ejercicios de Msyql 
-
-## SqlBolt
+<details>
+<summary><strong>SqlBolt</strong> </summary>
 <details>
 
 <summary>SQL Lesson 1: SELECT queries 101</summary>
@@ -308,4 +308,5 @@ INSERT INTO BoxOffice
 (movie_id, rating, Domestic_sales, International_sales)
 VALUES (15, 8.7, 340 000000,270 000000);
 ```
+</details>
 </details>
