@@ -310,3 +310,16 @@ VALUES (15, 8.7, 340 000000,270 000000);
 ```
 </details>
 </details>
+
+<details>
+<summary><strong>Sql_Practice</strong> </summary>
+<details>
+<summary>  Show first name, last name, and gender of patients whose gender is 'M'</summary>
+
+```
+SELECT first_name, last_name, gender 
+FROM patients 
+WHERE gender = 'M';
+```
+</details>
+</details>
